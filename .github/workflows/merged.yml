@@ -15,18 +15,7 @@ on:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "build"
-  build:
-    # The type of runner that the job will run on
+  check-if-merged:
     runs-on: ubuntu-latest
-
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      - name: Check merged
-        # You may pin to the exact commit or the version.
-        # uses: SonicGarden/check-merged-action@b6320f1b9f942846d6324935235c26c5226998cf
-        uses: SonicGarden/check-merged-action@v1.2.0
-        with:
-          # Origin branch
-          originBranch: main
-          token: ${{ secrets.GITHUB_TOKEN }}
+    - uses: CareMessagePlatform/check-if-merged@v2
