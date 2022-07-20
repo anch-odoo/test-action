@@ -23,5 +23,6 @@ jobs:
     # uses: SonicGarden/check-merged-action@b4333ae5642cbb543794c8077e0837bdeb7dc32e
       uses: SonicGarden/check-merged-action@v1.3.1
       with:
+        originBranch: main
         # Github token
         token: ${{ secrets.GITHUB_TOKEN }}
