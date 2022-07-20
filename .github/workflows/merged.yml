@@ -1,7 +1,0 @@
-name: Check merged
-  uses: SonicGarden/check-merged-action@v1.2.0
-  with:
-    # Origin branch
-    originBranch: # optional, default is staging
-    # Github token
-    token: 
